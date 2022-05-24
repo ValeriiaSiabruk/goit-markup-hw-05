@@ -1,0 +1,517 @@
+:root {
+  --border: #ececec;
+  --hero-button-hover: #188ce8;
+  --icon: #afb1b8;
+  --footer-icon-background: rgba(255, 255, 255, 0.1);
+  --black: #000;
+  --dark: #212121;
+  --gray: #757575;
+  --dark-gray: #2f303a;
+  --lite-gray: #f5f4fa;
+  --transparent-gray: rgba(255, 255, 255, 0.6);
+  --blue: #2196f3;
+  --white: #fff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  background-color: var(--lite-gray);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white);
+  background-color: var(--blue);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.button.active {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.section-title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.167;
+  color: var(--dark);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.image {
+  display: block;
+}
+
+.header {
+  border-bottom: 1px solid var(--border);
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation-list {
+  display: flex;
+}
+
+.header-navigation-item {
+  margin-right: 50px;
+}
+
+.header-navigation-item:last-child {
+  margin-right: 0px;
+}
+
+.header-navigation-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+.site-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.192;
+  color: var(--black);
+}
+
+.logo span {
+  color: var(--blue);
+}
+
+.current {
+  color: var(--blue);
+}
+
+.contacts {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.172;
+  color: var(--gray);
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts-item {
+  margin-right: 50px;
+}
+
+.header-contacts-item:last-child {
+  margin-right: 0;
+}
+
+.header .contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-envelope {
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  fill: currentColor;
+}
+
+.hero {
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 1600px;
+  background-color: var(--dark-gray);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero h1 {
+  margin: 0 auto;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  line-height: 1.363;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.hero-button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background-color: var(--blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hero-button-hover);
+}
+
+.advantages-list {
+  display: flex;
+}
+
+.advantages-item {
+  margin-right: 30px;
+}
+
+.advantages-item:last-child {
+  margin-right: 0;
+}
+
+.advantages-item {
+  width: 270px;
+}
+
+.advantages-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.142;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.advantages-description {
+  line-height: 1.714;
+  color: var(--gray);
+}
+
+.advantages .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  height: 120px;
+  background-color: var(--lite-gray);
+}
+
+.services {
+  padding-top: 0;
+}
+
+.services-list {
+  display: flex;
+}
+
+.services-list-item {
+  margin-right: 30px;
+}
+
+.services-list-item:last-child {
+  margin-right: 0;
+}
+
+.team {
+  background-color: var(--lite-gray);
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-card {
+  margin-right: 30px;
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card:last-child {
+  margin-right: 0;
+}
+
+.team-card-text {
+  padding: 30px;
+  text-align: center;
+}
+
+.team-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  color: var(--dark);
+}
+
+.team-description {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.187;
+  color: var(--gray);
+}
+
+.team .icon-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon);
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.team-card .icon {
+  fill: currentColor;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--icon);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  color: var(--icon);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.clients .icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients .icon {
+  fill: currentColor;
+}
+
+.works-filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.works-filters-item {
+  margin-right: 8px;
+}
+
+.works-filters-item:last-child {
+  margin-right: 0;
+}
+
+.works-filters-button {
+  display: block;
+  padding: 6px 22px;
+  color: var(--dark);
+  border-radius: 4px;
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.works-list-item {
+  display: block;
+}
+
+.works-list-item:hover,
+.works-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.work-list-text {
+  padding: 20px 24px;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+.works-list-title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--dark);
+}
+
+.works-list-description {
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--gray);
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-gray);
+}
+
+.footer-information {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-list {
+  display: flex;
+  margin-right: 70px;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.address {
+  font-style: normal;
+  line-height: 1.714;
+  color: var(--white);
+}
+
+.address-list {
+  margin-bottom: 9px;
+}
+
+.address-list:last-child {
+  margin-bottom: 0;
+}
+
+.footer .contacts {
+  font-weight: 400;
+  line-height: 1.714;
+  color: var(--transparent-gray);
+}
+
+.link-hover:hover,
+.link-hover:focus {
+  color: var(--blue);
+}
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-right-title {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.footer .social-link {
+  color: var(--white);
+  background-color: var(--footer-icon-background);
+}
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+  background-color: var(--blue);
+}
+
+.footer .icon {
+  fill: currentColor;
+}
