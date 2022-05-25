@@ -47,7 +47,6 @@ button {
 
 .link {
   text-decoration: none;
-  transition: color 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -62,15 +61,6 @@ button {
   letter-spacing: 0.03em;
   background-color: var(--lite-gray);
   cursor: pointer;
-  transition: background-color 250ms, color 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button:hover,
-.button:focus {
-  color: var(--white);
-  background-color: var(--blue);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .button.active {
@@ -144,6 +134,7 @@ button {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--dark);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-navigation {
@@ -184,6 +175,7 @@ button {
   font-weight: 500;
   line-height: 1.172;
   color: var(--gray);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -248,7 +240,7 @@ button {
   letter-spacing: 0.06em;
   color: var(--white);
   background-color: var(--blue);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -322,15 +314,12 @@ button {
   min-height: 70px;
   padding: 15px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.142;
   color: var(--white);
   background-color: var(--services-list-text);
   text-align: center;
   text-transform: uppercase;
-}
-
-.services-list-title {
-  font-size: 14px;
 }
 
 .team {
@@ -387,7 +376,8 @@ button {
   height: 44px;
   border-radius: 50%;
   color: var(--icon);
-  transition: background-color 250ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -409,7 +399,7 @@ button {
   width: 170px;
   height: 92px;
   color: var(--icon);
-  transition: color 250ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -446,12 +436,27 @@ button {
   padding: 6px 22px;
   color: var(--dark);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.works-filters-button:hover,
+.works-filters-button:focus {
+  color: var(--white);
+  background-color: var(--blue);
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
+    0 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .works-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.works-list-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works-list-img {
@@ -595,7 +600,8 @@ button {
   background-color: var(--backdrop);
   opacity: 1;
   z-index: 100;
-  transition: opacity 250ms, visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -632,7 +638,7 @@ button {
   color: var(--black);
   background-color: transparent;
   cursor: pointer;
-  transition: background-color 250ms, color 250ms, fill 250ms,
+  transition: background-color 250ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
